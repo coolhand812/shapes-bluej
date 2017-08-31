@@ -55,4 +55,28 @@ class Casa
         window.moveHorizontal(130);
         window.moveVertical(10);
     }
+    
+    /**
+     * Metodo mueve la casa entera horizontalmente.
+     * @dist Es la distancia en pixeles que se mueve la casa.
+     */
+    void mueveHoriz(int dist)
+    {
+	wall.moveHorizontal(dist);
+	door.moveHorizontal(dist);
+	roof.moveHorizontal(dist);
+	window.moveHorizontal(dist);
+    }
+    
+    /**
+     * Metodo mueve la casa entera verticalmente.
+     * @dist Es la distancia en pixeles que se mueve la casa.
+     */
+    void mueveVert(int dist)
+    {
+	wall.moveVertical(dist);
+	door.moveVertical(dist);
+	roof.moveVertical(dist);
+	window.moveVertical(dist);
+    }
 }    
