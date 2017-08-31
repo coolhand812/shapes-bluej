@@ -1,3 +1,7 @@
+/**
+ *Se establece la clase Casa para generar las casas de un blueprint generico.
+ *@autor Joe Diaz
+ */
 class Casa
 {
     // instance variables
@@ -7,6 +11,9 @@ class Casa
     Square wall;
     
     // constructor
+    /**
+     * El constructor declara las variables a usar en el programa.
+     */
     Casa()
     {
         window = new Circle();
@@ -16,6 +23,9 @@ class Casa
     }
     
     // method
+    /**
+     * Metodo que hace que las piezas de la casa se dibujen.
+     */
     void Drawyourself()
     {
         window.makeVisible();
@@ -30,6 +40,10 @@ class Casa
         window.changeColor("red");
     }
     
+    /**
+     * Metodo que hace que las piezas de la casa se arreglen en forma de
+     *  una casa.
+     */
     void Arrange()
     {
         wall.moveHorizontal(50);
